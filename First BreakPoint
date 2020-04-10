@@ -1,0 +1,44 @@
+from math import *
+
+def calculSpeed(t,d):
+    v = d/t
+    print("Speed = ",v)
+
+#calculSpeed(6.892,19.7)
+
+def nomAge():
+    print('Enter your name:')
+    n = input()
+    print('Enter your age:')
+    a = input()
+    print("Hello "+str(n)+" so your are "+str(a)+" years old")
+#nomAge()
+
+def verifyFloat(f):
+    if f >= 0:
+        print("The square root is ", f, "= ",sqrt(f))
+    else:
+        print("Error")
+#verifyFloat(-81.0)
+
+def lexicographie(mot1,mot2):
+    if mot1 < mot2:
+        print("The smallest is : ", mot1)
+    else:
+        print("The smallest is : ", mot2)
+#lexicographie("bouteille","bateau")
+
+def verifPression(pCourant,vCourant):
+    pSeuil = 2.3
+    vSeuil = 7.41
+    if pCourant > pSeuil and vCourant > vSeuil:
+        print("STOOOP")
+    elif pCourant > pSeuil:
+        print("Raise the volume")
+    elif vCourant > vSeuil:
+        print("Reduce the volume")
+    else:
+        print("Everything is okay")
+verifPression(1,4)
+
+
