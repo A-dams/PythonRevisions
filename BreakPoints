@@ -195,11 +195,33 @@ def verifyMail2():
                 else:
                     print(x,"Invalid mail")
                     #return 0
+#verifyMail2()
+
+def compterMots(arg):
+    dico = dict()
+    liste = arg.split()
+
+    for i in liste:
+        dico[i] = liste.count(i)
+    print(dico)
+
+
+#compterMots("say my name say my name yeah")
 
 
 
+def cube(w):
+    return w*w*w
+
+def volumesphere(r):
+    vol = 4/3 * pi * cube(r)
+    print("Volume :", vol, 'cm3')
+#volumesphere(18.3)
 
 
+def somme(n1, n2, n3):
+    return n1 + n2 + n3
 
-
-verifyMail2()
+nb = (10, 20, 35)
+a, b, c = nb
+print(somme(a, b, c))
