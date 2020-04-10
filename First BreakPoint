@@ -39,6 +39,123 @@ def verifPression(pCourant,vCourant):
         print("Reduce the volume")
     else:
         print("Everything is okay")
-verifPression(1,4)
+#verifPression(1,4)
+
+###############################################DEUXIEME BREAKPOINT#################################################
+
+def verifyMail(mail):
+    at = 0
+    for i in range(len(mail)):
+        if mail[i] == "@":
+            #print("@ found")
+            at = 1
+
+    for i in range(len(mail)):
+        if mail[i] == ".":
+           # print(".  found")
+            if mail[i+1] == "c" and mail[i+2] == "o" and mail[len(mail)-1] == "m" and at==1:
+                print("Valid mail")
+            else:
+                print("Invalid mail")
+#verifyMail("a@z.come")
+
+def printX(x):
+    for i in range(10):
+        print(x)
+#printX("Hello")
+
+def printLetter(l):
+    for i in l:
+        print(i)
+#printLetter("Maison")
+
+def incrAtoB(a,b):
+    if a >= b:
+        print("A must be greater than B")
+    else:
+        for i in range (b):
+            print(a+i)
+
+#incrAtoB(0,8)
+
+def filterInput():
+    print("Enter value : ")
+    x = input()
+    if int(x) >= 1 and int(x) <= 10:
+        print(x)
+    else:
+        print("error")
+#filterInput()
+
+def showList():
+    myList = ["Hello","FOOD","Computer","Glass"]
+    for i in myList:
+        print(i)
+#showList()
+
+def printLoop():
+    for i in range(15):
+        if i%3==0:
+            print(i)
+#printLoop()
+
+def printLoop2():
+    i =15
+    while i > 0:
+        if i%2==0:
+            print(i)
+        i-=1
+#printLoop2()
 
 
+###############################################TROISIEME BREAKPOINT#################################################
+
+def listeGame():
+    liste =[17, 38, 10, 25, 72]
+    liste.sort()
+    liste.append(12)
+    print(liste)
+    liste.reverse()
+    print(liste)
+    print(liste.index(17))
+    liste.remove(38)
+    print(liste)
+    #print third and fourth element
+    print(liste[2:4])
+    print(liste[:2])
+    print(liste[:])
+
+#listeGame()
+
+def rever(str):
+    #print(str[::-1])
+    return str[::-1]
+#rever("Python")
+
+def palindrome(word):
+    w = rever(word)
+    if word == w:
+        print("True")
+    else:
+        print("False")
+
+#palindrome("un radar nu")
+#palindrome("pullupifipullup")
+
+def machinTruc():
+    truc = []
+    machin = [0.0,0.0,0.0,0.0,0.0]
+    print(truc)
+    print(machin)
+#machinTruc()
+
+def rangeGame():
+    for i in range(3):
+        print(i)
+    for i in range(4,7):
+        print(i)
+    for i in range(2,8,2):
+        print(i)
+#rangeGame()
+
+###############################################QUATRIEME BREAKPOINT#################################################
