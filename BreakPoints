@@ -144,7 +144,7 @@ def palindrome(word):
 
 def machinTruc():
     truc = []
-    machin = [0.0,0.0,0.0,0.0,0.0]
+    machin = [0.0 for i in range(5)]
     print(truc)
     print(machin)
 #machinTruc()
