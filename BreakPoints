@@ -54,10 +54,12 @@ def verifyMail(mail):
         if mail[i] == ".":
            # print(".  found")
             if mail[i+1] == "c" and mail[i+2] == "o" and mail[len(mail)-1] == "m" and at==1:
-                print("Valid mail")
+ #               print("Valid mail")
+                return 1
             else:
-                print("Invalid mail")
-#verifyMail("a@z.come")
+#                print("Invalid mail")
+                return 0
+#verifyMail("a@a.come")
 
 def printX(x):
     for i in range(10):
@@ -159,3 +161,45 @@ def rangeGame():
 #rangeGame()
 
 ###############################################QUATRIEME BREAKPOINT#################################################
+
+
+def fileX():
+    print("Enter number")
+    x = input()
+    f = open("data.txt","a")
+    for i in range (int(x)):
+        print("Enter value")
+        data = input()
+        f.write(data)
+        f.write("\n")
+
+    f.close()
+
+#fileX()
+
+def verifyMail2():
+    f = open("data.txt", "r")
+    at = 0
+    for x in f:
+        for i in range(len(x)):
+            if x[i] == "@":
+                #print("@ found")
+                at = 1
+        for i in range(len(x)):
+            if x[i] == ".":
+               # print(".  found")
+                if x[i + 1] == "c" and x[i + 2] == "o" and x[i+3] == "m" and at == 1:
+                    print(x,"Valid mail")
+                    at = 0
+                    #return 1
+                else:
+                    print(x,"Invalid mail")
+                    #return 0
+
+
+
+
+
+
+
+verifyMail2()
